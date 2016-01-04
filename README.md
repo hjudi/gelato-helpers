@@ -1,5 +1,5 @@
 # gelato-helpers
-A compact, single-file collection of iOS helpers for various common tasks related to designing modern UIs, social patterns , and more. 
+A compact, single-file collection of iOS helpers + time savers for common tasks related to tweaking UIView, dealing with messy REST values, image manipulation, and more. 
 
 ## Installation
 Just drop the file into your Xcode project and add it to your target.
