@@ -172,6 +172,14 @@ func hexToColor(hex: String) -> UIColor? {
     return nil
 }
 
+//Vice versa.
+
+func colorToHex(color: UIColor) -> String {
+    
+    let values = color.getRGB()
+    
+    return String(format: "%02x%02x%02x", Int(values[0]*255), Int(values[1]*255), Int(values[2]*255))
+}
 
 //If you use NSAttributedString, this is your lucky day.
 //paragraphStyleWithLineHeight() gives you a quick paragraph style with specified settings.
