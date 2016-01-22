@@ -355,14 +355,14 @@ extension UIColor {
     
     
     //Makes the image darker/brighter by the specified percentage.
-    //<White>.darkerByPercentage(percentage: 100) -> <Black>
+    //<White>.darkerByPercentage(percentage: 1.0) -> <Black>
     
     func darkerByPercentage(percentage: CGFloat) -> UIColor {
         
         var red = CGFloat(); var green = CGFloat(); var blue = CGFloat(); var a = CGFloat()
         self.getRed(&red, green: &green, blue: &blue, alpha: &a)
         
-        return UIColor(red: red-(percentage/100), green: green-(percentage/100), blue: blue-(percentage/100), alpha: a)
+        return UIColor(red: red-percentage, green: green-percentage, blue: blue-percentage, alpha: a)
     }
     
     func lighterByPercentage(percentage: CGFloat) -> UIColor {
@@ -370,7 +370,7 @@ extension UIColor {
         var red = CGFloat(); var green = CGFloat(); var blue = CGFloat(); var a = CGFloat()
         self.getRed(&red, green: &green, blue: &blue, alpha: &a)
         
-        return UIColor(red: red+(percentage/100), green: green+(percentage/100), blue: blue+(percentage/100), alpha: a)
+        return UIColor(red: red+percentage, green: green+percentage, blue: blue+percentage, alpha: a)
     }
     
     
