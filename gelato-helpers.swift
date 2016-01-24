@@ -256,7 +256,7 @@ extension String {
                             hitAnObstacle = true
                             break
                         }
-                        if String(string[finalMentionRange.endIndex]).rangeOfCharacterFromSet(NSCharacterSet(charactersInString: " .@:!$%^&*()+=?\"\'[]")) != nil {
+                        if String(string[finalMentionRange.endIndex]).rangeOfCharacterFromSet(NSCharacterSet(charactersInString: " .@:!$%^&*()+=?\"\'[]\n")) != nil {
                             
                             hitAnObstacle = true
                             break
