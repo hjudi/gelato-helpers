@@ -176,7 +176,7 @@ func hexToColor(hex: String) -> UIColor? {
 
 func colorToHex(color: UIColor) -> String {
     
-    let values = color.getRGB()
+    let values = color.getRGBA()
     
     return String(format: "%02x%02x%02x", Int(values[0]*255), Int(values[1]*255), Int(values[2]*255))
 }
