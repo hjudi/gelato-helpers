@@ -102,6 +102,46 @@ extension NSDate {
 }
 
 
+extension UIViewController {
+	
+	var x : CGFloat {
+		
+		get {
+			return self.view.frame.origin.x
+		}
+		set(newX) {
+			self.view.frame.origin.x = newX
+		}
+	}
+	var y : CGFloat {
+		
+		get {
+			return self.view.frame.origin.y
+		}
+		set(newY) {
+			self.view.frame.origin.y = newY
+		}
+	}
+	var width : CGFloat {
+		
+		get {
+			return self.view.frame.width
+		}
+		set(newW) {
+			self.view.frame.size.width = newW
+		}
+	}
+	var height : CGFloat {
+		
+		get {
+			return self.view.frame.height
+		}
+		set(newH) {
+			self.view.frame.size.height = newH
+		}
+	}
+}
+
 extension UIView {
     
     //Removes all subviews.
